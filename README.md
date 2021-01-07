@@ -1,2 +1,2 @@
 # NodeAPI
-A simple NodeJs based API where I'm applying some API REST concepts.
+A simple NodeJs based API where I'm applying some API REST concepts during my API studies.
