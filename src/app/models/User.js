@@ -2,15 +2,28 @@
 
 const { sequelize, Sequelize } = require(".");
 
-module.exports = (sequelize, Sequelize) => {
-    const User = sequelize.difine('User',
+module.exports = (sequelize, DataTypes) => {
+    const User = sequelize.define('User',
     {
         email: {
-            type: Sequelize.STRING
+            type: DataTypes.STRING,
+            allowNull: false
         },
         password_hash: {
-            type: Sequelize.STRING,
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        createdAt: {
+            type: DataTypes.DATE,
+            allowNull: false,
+            defaultValue: DataTypes.NOW
+        },
+        updatedAt: {
+            type: DataTypes.DATE,
+            allowNull: false,
+            defaultValue: DataTypes.NOW
         }
+
     }, { tableName: 'users' }
     );
 
