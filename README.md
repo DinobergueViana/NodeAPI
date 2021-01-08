@@ -10,3 +10,5 @@ A simple NodeJs based API where I'm applying some API REST concepts during my st
 - middlewares;
 - authentication;
 - `sequelizerc` and `.env` use;
+- migrations and seeders;
+- MySQL;
